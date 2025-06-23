@@ -30,6 +30,12 @@ return {
       })
     end,
   },
+  -- {
+  --   "LazyVim/LazyVim",
+  --   opts = {
+  --     colorscheme = "kanagawa",
+  --   },
+  -- },
   {
     "Mofiqul/dracula.nvim",
     lazy = false,
