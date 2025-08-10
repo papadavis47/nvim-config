@@ -6,3 +6,11 @@
 --
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "markdown",
+  callback = function()
+    vim.opt_local.textwidth = 80 -- hard wrap at 80 chars when formatting
+    vim.opt_local.colorcolumn = "80" -- visual indicator at 80 chars
+    vim.opt_local.wrap = true -- enable soft wrap
+  end,
+})
