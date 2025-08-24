@@ -6,6 +6,7 @@ local set = vim.keymap.set
 
 set("n", "<C-s>", ":w<CR>", { remap = false, desc = "Write Current Buffer", silent = true })
 set("n", "<C-x>", ":bd<CR>", { remap = false, desc = "Close current buffer", silent = true })
+set("i", "<C-x>", "<Escape>:bd<CR>", { remap = false, desc = "Close current buffer", silent = true })
 
 -- Trying Ryan Florence trick with Lua
 set("n", "<A-j>", ":m .+1<CR>==", { remap = false })
