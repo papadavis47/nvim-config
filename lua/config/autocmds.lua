@@ -12,5 +12,6 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.textwidth = 80 -- hard wrap at 80 chars when formatting
     vim.opt_local.colorcolumn = "80" -- visual indicator at 80 chars
     vim.opt_local.wrap = true -- enable soft wrap
+    vim.diagnostic.enable(false, { bufnr = 0 }) -- disable all diagnostics for markdown
   end,
 })
