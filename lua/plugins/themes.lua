@@ -37,6 +37,12 @@ return {
   --   },
   -- },
   {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "everforest",
+    },
+  },
+  {
     "Mofiqul/dracula.nvim",
     lazy = false,
     priority = 1000,
