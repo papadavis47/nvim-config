@@ -8,6 +8,9 @@ set("n", "<C-s>", ":w<CR>", { remap = false, desc = "Write Current Buffer", sile
 set("n", "<C-x>", ":bd<CR>", { remap = false, desc = "Close current buffer", silent = true })
 set("i", "<C-x>", "<Escape>:bd<CR>", { remap = false, desc = "Close current buffer", silent = true })
 
+-- For help files
+set("n", "<leader>th", "<cmd>tab help<cr>", { desc = "Help in new tab" })
+
 -- Trying Ryan Florence trick with Lua
 set("n", "<A-j>", ":m .+1<CR>==", { remap = false })
 set("n", "<A-k>", ":m .-2<CR>==", { remap = false })
