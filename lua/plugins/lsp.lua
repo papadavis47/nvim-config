@@ -3,7 +3,9 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        tsserver = {
+        -- LazyVim's typescript extra runs vtsls and disables tsserver/ts_ls,
+        -- so TS preferences must live here; merged into LazyVim's vtsls opts.
+        vtsls = {
           settings = {
             typescript = {
               preferences = {
